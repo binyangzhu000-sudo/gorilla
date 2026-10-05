@@ -34,6 +34,10 @@ For model names containing `{...}`, multiple versions are available. For example
 | Command A Reasoning                    | Function Calling | Cohere         | command-a-reasoning-08-2025-FC                              |
 | Command R7B                            | Function Calling | Cohere         | command-r7b-12-2024-FC                                      |
 | DeepSeek-R1                            | Prompt           | Self-hosted 💻 | deepseek-ai/DeepSeek-R1                                     |
+| DeepSeek-V3.1                          | Function Calling | Atlas Cloud    | deepseek-ai/DeepSeek-V3.1-FC-atlascloud                     |
+| DeepSeek-V3.1                          | Prompt           | Atlas Cloud    | deepseek-ai/DeepSeek-V3.1-atlascloud                        |
+| DeepSeek-V3.1-Terminus                 | Function Calling | Atlas Cloud    | deepseek-ai/DeepSeek-V3.1-Terminus-FC-atlascloud            |
+| DeepSeek-V3.1-Terminus                 | Prompt           | Atlas Cloud    | deepseek-ai/DeepSeek-V3.1-Terminus-atlascloud               |
 | DeepSeek-V3.2-Exp                      | Function Calling | DeepSeek       | DeepSeek-V3.2-Exp-FC                                        |
 | DeepSeek-V3.2-Exp                      | Prompt           | DeepSeek       | DeepSeek-V3.2-Exp                                           |
 | DeepSeek-V3.2-Exp (Prompt + Thinking)  | Prompt           | DeepSeek       | DeepSeek-V3.2-Exp-thinking                                  |
@@ -57,6 +61,8 @@ For model names containing `{...}`, multiple versions are available. For example
 | GLM-4.5                                | Function Calling | Zhipu AI       | glm-4.5-FC                                                  |
 | GLM-4.5-Air                            | Function Calling | Zhipu AI       | glm-4.5-air-FC                                              |
 | GLM-4.6                                | Function Calling | Zhipu AI       | glm-4.6-FC                                                  |
+| GLM-4.7                                | Function Calling | Atlas Cloud    | zai-org/GLM-4.7-FC-atlascloud                               |
+| GLM-4.7                                | Prompt           | Atlas Cloud    | zai-org/GLM-4.7-atlascloud                                  |
 | GoGoAgent                              | Prompt           | BitAgent       | BitAgent/GoGoAgent                                          |
 | Gorilla-OpenFunctions-v2               | Function Calling | Gorilla LLM    | gorilla-openfunctions-v2                                    |
 | GPT-4.1-2025-04-14                     | Function Calling | OpenAI         | gpt-4.1-2025-04-14-FC                                       |

@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from typing import Optional
 
+from bfcl_eval.model_handler.api_inference.atlascloud import AtlasCloudHandler
 from bfcl_eval.model_handler.api_inference.claude import ClaudeHandler
 from bfcl_eval.model_handler.api_inference.cohere import CohereHandler
 from bfcl_eval.model_handler.api_inference.deepseek import DeepSeekAPIHandler
@@ -2129,6 +2130,79 @@ local_inference_model_map = {
 
 # Inference through third-party inference platforms for open-source models
 third_party_inference_model_map = {
+    # Via Atlas Cloud Endpoint
+    "deepseek-ai/DeepSeek-V3.1-atlascloud": ModelConfig(
+        model_name="deepseek-ai/DeepSeek-V3.1",
+        display_name="DeepSeek-V3.1 (Prompt) (Atlas Cloud)",
+        url="https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
+        org="DeepSeek",
+        license="MIT",
+        model_handler=AtlasCloudHandler,
+        input_price=0.3,
+        output_price=0.95,
+        is_fc_model=False,
+        underscore_to_dot=False,
+    ),
+    "deepseek-ai/DeepSeek-V3.1-FC-atlascloud": ModelConfig(
+        model_name="deepseek-ai/DeepSeek-V3.1",
+        display_name="DeepSeek-V3.1 (FC) (Atlas Cloud)",
+        url="https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
+        org="DeepSeek",
+        license="MIT",
+        model_handler=AtlasCloudHandler,
+        input_price=0.3,
+        output_price=0.95,
+        is_fc_model=True,
+        underscore_to_dot=True,
+    ),
+    "deepseek-ai/DeepSeek-V3.1-Terminus-atlascloud": ModelConfig(
+        model_name="deepseek-ai/DeepSeek-V3.1-Terminus",
+        display_name="DeepSeek-V3.1-Terminus (Prompt) (Atlas Cloud)",
+        url="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus",
+        org="DeepSeek",
+        license="MIT",
+        model_handler=AtlasCloudHandler,
+        input_price=0.3,
+        output_price=0.95,
+        is_fc_model=False,
+        underscore_to_dot=False,
+    ),
+    "deepseek-ai/DeepSeek-V3.1-Terminus-FC-atlascloud": ModelConfig(
+        model_name="deepseek-ai/DeepSeek-V3.1-Terminus",
+        display_name="DeepSeek-V3.1-Terminus (FC) (Atlas Cloud)",
+        url="https://huggingface.co/deepseek-ai/DeepSeek-V3.1-Terminus",
+        org="DeepSeek",
+        license="MIT",
+        model_handler=AtlasCloudHandler,
+        input_price=0.3,
+        output_price=0.95,
+        is_fc_model=True,
+        underscore_to_dot=True,
+    ),
+    "zai-org/GLM-4.7-atlascloud": ModelConfig(
+        model_name="zai-org/glm-4.7",
+        display_name="GLM-4.7 (Prompt) (Atlas Cloud)",
+        url="https://huggingface.co/zai-org/GLM-4.7",
+        org="Zhipu AI",
+        license="MIT",
+        model_handler=AtlasCloudHandler,
+        input_price=0.52,
+        output_price=1.85,
+        is_fc_model=False,
+        underscore_to_dot=False,
+    ),
+    "zai-org/GLM-4.7-FC-atlascloud": ModelConfig(
+        model_name="zai-org/glm-4.7",
+        display_name="GLM-4.7 (FC) (Atlas Cloud)",
+        url="https://huggingface.co/zai-org/GLM-4.7",
+        org="Zhipu AI",
+        license="MIT",
+        model_handler=AtlasCloudHandler,
+        input_price=0.52,
+        output_price=1.85,
+        is_fc_model=True,
+        underscore_to_dot=True,
+    ),
     # Via Novita AI Endpoint
     "meta-llama/llama-4-maverick-17b-128e-instruct-fp8-novita": ModelConfig(
         model_name="meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
